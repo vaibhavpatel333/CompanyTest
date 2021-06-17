@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "d6a2c2a9-6a9b-4f69-bfc5-6358ac31aef7",
+		"name": "vaibhavTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/singup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "uname",
+							"value": "aaasaq",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "aaa",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12",
+							"description": "1",
+							"type": "text"
+						},
+						{
+							"key": "conpassword",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "rolltypeid",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/singup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"singup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/company/addcomapnydetails",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjcsInJvbGx0eXBlIjoxLCJpYXQiOjE2MjM5MDg5MTd9.po72ScmCFfVN7DfblL2XBj156KN_08fe9XiP0KjQQzM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "companyName",
+							"value": "aa",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "surat",
+							"type": "text"
+						},
+						{
+							"key": "phoneNo",
+							"value": "5555555",
+							"type": "text"
+						},
+						{
+							"key": "emailid",
+							"value": "Baba",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/company/addcomapnydetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"company",
+						"addcomapnydetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ram",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/company/companylist",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjgsInJvbGx0eXBlIjoyLCJpYXQiOjE2MjM5MDQ0MDJ9.TNW3OBbq4_unOhR9-02wdkxOAvoigEaHOdNaLeUtM8U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/company/companylist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"company",
+						"companylist"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
