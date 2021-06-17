@@ -74,7 +74,7 @@ router.post('/addcomapnydetails', checkCompanyName, [check('companyName', "Emplt
 
 router.get('/companylist', async function (req, res, next,) {
 
-    let payload = await checkValidation.checkUserAuth(req, res, next, "addcomapnydetails")
+    let payload = await checkValidation.checkUserAuth(req, res, next, "companylist")
 
     if (!payload) {
         return
